@@ -12,10 +12,12 @@ TABLE OF CONTENTS
 		+ Section 3
         + Contact
         + Footer
-        + @media RESPONSIV
+     + @media RESPONSIV
+     + ANIMATION
         + ANIMATION BURGER NAV-R
         + SECTION CONTACT SLIDER RANGE
         + Preloader Circle
+        + Preloader LOGGO
 */
 
 
@@ -1070,6 +1072,13 @@ body {
 
 }
 
+
+/*  ##################################################################################
+################################## ANIMATION #########################################
+######################################################################################
+
+
+
 /* -------------------------------------------------------
           ANIMATION BURGER NAV-R
 -------------------------------------------------------- */
@@ -1159,14 +1168,12 @@ body {
     background-color: white;
 }
 
-
 .animated-bg.open .logo-loggia-left {
     background: #2E2E2E;
     width: 100%;
     height: 480px;
     transition: 0.2s;
 }
-
 
 .animated-bg.open .logo-loggia-left .bg-logo-loggia-left {
     transition: 0.2s;
@@ -1282,10 +1289,13 @@ body {
     background: transparent;
 }
 
+
+
+
+
 /* -------------------------------------------------------
                      Preloader Circle
 -------------------------------------------------------- */
-
 
 #loader-wrapper {
     position: fixed;
@@ -1423,20 +1433,9 @@ body {
     transition: all 0.3s 1s ease-out;
 }
 
-
-
-
-
-
-
-
-
-
-.no-scroll-y {
-    overflow-y: hidden;
-}
-
-/* Preloader */
+/* -------------------------------------------------------
+                     Preloader LOGGO
+-------------------------------------------------------- */
 .ctn-preloader {
     align-items: center;
     cursor: none;
@@ -1455,8 +1454,6 @@ body {
     z-index: 100;
 }
 
-
-/* Texto cargando */
 .ctn-preloader .animation-preloader .txt-loading {
     font: bold 5em 'Montserrat', sans-serif;
     text-align: center;
@@ -1521,13 +1518,11 @@ body {
     right: 0;
 }
 
-/* Efecto de fade en la animación de cargando */
 .loaded .animation-preloader {
     opacity: 0;
     transition: 0.3s ease-out;
 }
 
-/* Efecto de cortina */
 .loaded .loader-section.section-left {
     transform: translateX(-101%);
     transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
@@ -1538,14 +1533,6 @@ body {
     transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
 }
 
-/* Animación del preloader */
-@keyframes spinner {
-    to {
-        transform: rotateZ(360deg);
-    }
-}
-
-/* Animación de las letras cargando del preloader */
 @keyframes letters-loading {
     0%,
     75%,
@@ -1561,30 +1548,16 @@ body {
     }
 }
 
-/* Tamaño de portatil hacia atras (portatil, tablet, celular) */
 @media screen and (max-width: 767px) {
-    /* Preloader */
-    /* Spinner cargando */
-    .ctn-preloader .animation-preloader .spinner {
-        height: 8em;
-        width: 8em;
-    }
 
-    /* Texto cargando */
+
     .ctn-preloader .animation-preloader .txt-loading {
         font: bold 3.5em 'Montserrat', sans-serif;
     }
 }
 
 @media screen and (max-width: 500px) {
-    /* Prelaoder */
-    /* Spinner cargando */
-    .ctn-preloader .animation-preloader .spinner {
-        height: 7em;
-        width: 7em;
-    }
 
-    /* Texto cargando */
     .ctn-preloader .animation-preloader .txt-loading {
         font: bold 2em 'Montserrat', sans-serif;
     }
