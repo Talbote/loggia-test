@@ -28,17 +28,17 @@ function montheme_register_assets()
     wp_register_script('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js', []);
 
     wp_register_style( 'styleLoggia', 'https://use.typekit.net/vhf3lak.css' ,[]);
-    wp_register_style( 'cssslider', 'https://picbak.be/app/themes/loggia/css/ion.rangeSlider.css' ,[]);
-    wp_register_style( 'cssslidermin', 'https://picbak.be/app/themes/loggia/css/ion.rangeSlider.min.css' ,[]);
-    wp_register_style( 'cssMain', 'https://picbak.be/app/themes/loggia/css/main.css' ,[]);
+    wp_register_style( 'cssslider', 'https://picbak.be/app/themes/loggia/assets/css/ion.rangeSlider.css' ,[]);
+    wp_register_style( 'cssslidermin', 'https://picbak.be/app/themes/loggia/assets/css/ion.rangeSlider.min.css' ,[]);
+    wp_register_style( 'cssMain', 'https://picbak.be/app/themes/loggia/assets/css/main.css' ,[]);
 
 
     wp_deregister_script( 'jquery' );
     wp_register_script('njquery', 'https://code.jquery.com/jquery-3.6.0.min.js', []);
-    wp_register_script('jsmain', 'https://picbak.be/app/themes/loggia/js/main.js' , []);
+    wp_register_script('jsmain', 'https://picbak.be/app/themes/loggia/assets/js/main.js' , []);
 
-    wp_register_script('jsslider', 'https://picbak.be/app/themes/loggia/js/ion.rangeSlider.js' , []);
-    wp_register_script('jsslidermin', 'https://picbak.be/app/themes/loggia/js/ion.rangeSlider.min.js' , []);
+    wp_register_script('jsslider', 'https://picbak.be/app/themes/loggia/assets/js/ion.rangeSlider.js' , []);
+    wp_register_script('jsslidermin', 'https://picbak.be/app/themes/loggia/assets/js/ion.rangeSlider.min.js' , []);
 
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
